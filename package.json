@@ -82,6 +82,7 @@
     "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
     "develop": "gatsby develop",
+    "deploy": "gatsby build && gh-pages -d public -b master -r 'git@github.com:sori-kim/sori-kim.github.io.git'",
     "start": "npm run develop",
     "build": "gatsby build",
     "lh": "lighthousebot",
