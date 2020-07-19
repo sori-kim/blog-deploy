@@ -124,4 +124,4 @@ void는 아무값도 리턴하지 않는 경우를 의미한다.
 
 <br>
 
-_이글은 The Net Ninja의 [youtube]('/')와 velopert님의 typescript tutorial을 학습함며 정리한 포스팅입니다._
+_이글은 The Net Ninja의 [youtube]('/')와 velopert님의 typescript tutorial을 학습하며 정리한 포스팅입니다._

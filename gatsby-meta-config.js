@@ -2,7 +2,7 @@ module.exports = {
   title: `Sori's Develog`,
   description: `Blog posted about ...`,
   author: `[Sori Kim]`,
-  introduction: `Code makes world better.`,
+  introduction: `주니어프론트앤드개발자: 사회적 가치 실현을 개발을 통해 이루는 것에 관심이 있습니다.`,
   siteUrl: `https://sori-kim.netlify.com`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
