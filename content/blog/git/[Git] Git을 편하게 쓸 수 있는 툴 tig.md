@@ -1,7 +1,7 @@
 ---
 title: '[Git] Git을 편하게 쓸 수 있는 툴 tig'
 date: 2020-05-01 13:07:16
-category: 'category1'
+category: 'git'
 draft: false
 ---
 

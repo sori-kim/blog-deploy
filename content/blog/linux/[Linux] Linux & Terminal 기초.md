@@ -1,7 +1,7 @@
 ---
 title: '[Linux] Linux & Terminal 기초'
 date: 2020-05-02 00:21:13
-category: 'category1'
+category: 'linux'
 draft: false
 ---
 

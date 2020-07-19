@@ -1,7 +1,7 @@
 ---
 title: '[React Basis] 안녕, 리액트? + 컴포넌트를 만드는 첫번째 방법: Function Component'
 date: 2020-05-04 00:21:13
-category: 'category1'
+category: 'react'
 draft: false
 ---
 
