@@ -4,7 +4,7 @@ date: '2020-06-07T01:00:03.284Z'
 template: 'post'
 draft: false
 slug: 'review/200607'
-category: 'team-project'
+category: '회고'
 tags:
   - 'team-project'
 
@@ -329,3 +329,7 @@ render(){
     )
 }
 ```
+
+## 6. 느낀점
+
+모든 것에는 끝 마무리가 가장 중요하다고 생각한다. 이번 서브웨이 프로젝트는 시작은
