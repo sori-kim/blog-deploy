@@ -1,13 +1,8 @@
 ---
-title: "[TypeScript] Interface & Type Alias 사용해보기  "
-date: "2020-06-30T04:00:03.284Z"
-template: "post"
+title: '[TypeScript] Interface & Type Alias 사용해보기  '
+date: 2020-06-30 04:00:03
 draft: false
-slug: "typescript/200630/3"
-category: "typescript"
-tags:
-  - "typescript"
-description: "클래스 또는 객체를 위한 타입을 지정할때 사용하는 대표적 방법 두가지 interface와 type에 대해 알아봅니다."
+category: 'typescript'
 ---
 
 # 1.Interface 사용해보기
@@ -31,34 +26,34 @@ interface Shape {
 class Circle implements Shape {
   //`implements` 키워드로 해당 클래스가
   //Shape interface의 조건을 충족하겠다는 것을 명시
-  radius: number;
+  radius: number
 
   constructor(radius: number) {
-    this.radius = radius;
+    this.radius = radius
   }
   //너비를 가져오는 함수 구현
   getArea() {
-    return this.radius * this.radius * Math.PI;
+    return this.radius * this.radius * Math.PI
   }
 }
 
 class Rectangle implements Shape {
-  width: number;
-  height: number;
+  width: number
+  height: number
   constructor(width: number, height: number) {
-    this.width = width;
-    this.height = height;
+    this.width = width
+    this.height = height
   }
   getArea() {
-    return (this.width = this.height);
+    return (this.width = this.height)
   }
 }
 
-const shapes: Shape[] = [new Circle(5), new Rectangle(10, 5)];
+const shapes: Shape[] = [new Circle(5), new Rectangle(10, 5)]
 
-shapes.forEach((shape) => {
-  console.log(shape.getArea());
-});
+shapes.forEach(shape => {
+  console.log(shape.getArea())
+})
 //78.53981633974483
 //5
 ```
@@ -141,14 +136,14 @@ interface Developer {
 }
 
 const person: Person = {
-  name: "김사람",
+  name: '김사람',
   age: 20,
-};
+}
 
 const expert: Developer = {
-  name: "김개발",
-  skills: ["javascript", "react"],
-};
+  name: '김개발',
+  skills: ['javascript', 'react'],
+}
 ```
 
 지금 보면 Person 과 Developer 가 형태가 유사하다.  
@@ -164,16 +159,16 @@ interface Developer extends Person {
 }
 
 const person: Person = {
-  name: "김사람",
+  name: '김사람',
   age: 20,
-};
+}
 
 const expert: Developer = {
-  name: "김개발",
-  skills: ["javascript", "react"],
-};
+  name: '김개발',
+  skills: ['javascript', 'react'],
+}
 
-const people: Person[] = [person, expert];
+const people: Person[] = [person, expert]
 ```
 
 # 2. Type Alias 사용하기 (타입의 변수화)
@@ -184,28 +179,28 @@ type이 같은 형식으로 반복된다면 변수로 지정해서 코드를 단
 type Person = {
   name: string,
   age?: number,
-};
+}
 
 // & 는 두개 이상의 타입들을 합칠때
 type Developer = Person & {
   skills: string[],
-};
+}
 
 const person: Person = {
-  name: "김사람",
-};
+  name: '김사람',
+}
 
 const expert: Developer = {
-  name: "김개발",
-  skills: ["javascript", "react"],
-};
+  name: '김개발',
+  skills: ['javascript', 'react'],
+}
 
-type People = Person[]; // Person[] 를 이제 앞으로 People 이라는 타입으로 사용 할 수 있음
-const people: People = [person, expert];
+type People = Person[] // Person[] 를 이제 앞으로 People 이라는 타입으로 사용 할 수 있음
+const people: People = [person, expert]
 
-type Color = "red" | "orange" | "yellow";
-const color: Color = "red";
-const colors: Color[] = ["red", "orange"];
+type Color = 'red' | 'orange' | 'yellow'
+const color: Color = 'red'
+const colors: Color[] = ['red', 'orange']
 ```
 
 ## type과 interface ... 뭘 써야할까?

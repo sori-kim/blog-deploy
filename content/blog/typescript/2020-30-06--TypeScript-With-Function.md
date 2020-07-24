@@ -1,13 +1,8 @@
 ---
 title: '[TypeScript] 함수에서 타입 사용하기'
-date: '2020-06-30T03:00:03.284Z'
-template: 'post'
+date: 2020-06-30 03:00:03
 draft: false
-slug: 'typescript/200630/2'
 category: 'typescript'
-tags:
-  - 'typescript'
-description: '타입스크립트에서 함수의 타입 지정, 파라미터 타입, return type에 대해 정리합니다. '
 ---
 
 ## 함수에서 타입 사용하기

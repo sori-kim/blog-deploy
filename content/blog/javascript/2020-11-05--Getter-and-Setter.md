@@ -1,6 +1,6 @@
 ---
 title: '[JavaScript] getter와 setter 메서드 똑똑하게 사용하기   '
-date: 2020-05-11T01:12:03.284Z
+date: 2020-05-11 01:12:00
 draft: false
 category: 'javascript'
 ---

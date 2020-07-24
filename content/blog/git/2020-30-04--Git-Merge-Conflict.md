@@ -1,17 +1,8 @@
 ---
-title: "[Git] Git merge와 Conflict 해결하기"
-date: "2020-04-30T08:12:03.284Z"
-template: "post"
+title: '[Git] Git merge와 Conflict 해결하기'
+date: 2020-04-30 08:12:00
 draft: false
-slug: "git/200430/3"
-category: "git"
-tags:
-  - "git"
-  # - "Typography"
-  # - "Web Development"
-description: "master브랜치에서 분화하여 기능별로 작업한 branch들이 최종적으로 개발이 완료되면 master브랜치에 합체를 해야한다.
-이때 사용하는 개념이 `merge(병합)`이고, 다음의 순서를 거친다."
-socialImage: "/media/42-line-bible.jpg"
+category: 'git'
 ---
 
 # 1. Git Merge

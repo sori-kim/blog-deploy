@@ -1,14 +1,8 @@
 ---
-title: " [인스타클론] React Props & States 활용, 이벤트핸들링 "
-date: "2020-05-18T01:12:03.284Z"
-template: "post"
+title: ' [인스타클론] React Props & States 활용, 이벤트핸들링 '
+date: 2020-05-18 01:12:03
 draft: false
-slug: "react/200518"
-category: "react"
-tags:
-  - "react"
-  - "westagram"
-description: "지금 진행하고 있는 인스타그램 클론 미니프로젝트에서 states를 이용해서 데이터를 다루는 연습과 이벤트 핸들링을 연습해봤다. "
+category: 'react'
 ---
 
 <br>
@@ -108,10 +102,10 @@ export default withRouter(Login);
 
 ```jsx
 activeBtn = () => {
-  this.state.id.includes("@") && this.state.pw.length >= 5
+  this.state.id.includes('@') && this.state.pw.length >= 5
     ? this.setState({ isActive: true })
-    : this.setState({ isActive: false });
-};
+    : this.setState({ isActive: false })
+}
 ```
 
 그리고 두 input을 감싸고 있는 wrapper 태그에 이벤트 함수를 걸었다.
@@ -132,7 +126,7 @@ activeBtn = () => {
 ```jsx
 <button
   onClick={this.handleOnClick}
-  className={this.state.isActive ? "login-btn activeBtn" : "login-btn"}
+  className={this.state.isActive ? 'login-btn activeBtn' : 'login-btn'}
 >
   로그인
 </button>

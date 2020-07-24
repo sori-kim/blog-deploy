@@ -1,13 +1,8 @@
 ---
 title: '[React Basis] Session #3. React Props & States / Array.map() 활용 - Monsters 🧟‍♂️ '
-date: '2020-05-17T10:12:03.284Z'
-template: 'post'
+date: 2020-05-17 10:12:03
 draft: false
-slug: 'react/200519'
 category: 'react'
-tags:
-  - 'react'
-description: ''
 ---
 
 ## Goal

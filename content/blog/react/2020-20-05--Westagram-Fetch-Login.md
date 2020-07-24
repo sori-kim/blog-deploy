@@ -1,15 +1,8 @@
 ---
-title: " [인스타클론] ⭐️ fetch() GET, POST  (회원가입,로그인,피드 댓글 불러오기 기능) "
-date: "2020-05-24T02:12:03.284Z"
-template: "post"
+title: ' [인스타클론] fetch() GET, POST  (회원가입,로그인,피드 댓글 불러오기 기능) '
+date: 2020-05-24 02:12:03
 draft: false
-slug: "react/200524"
-category: "react"
-tags:
-  - "react"
-  - "westagram"
-description: "인스타그램 클론한 앱에 드디어 백엔드와 연결해보는 미니 프로젝트를 진행했다. 
-크게 회원가입, 로그인, 메인의 피드중에서 댓글을 불러오는 기능을 구현했고 코드를 정리해두려고 한다."
+category: 'react'
 ---
 
 ## 인스타그램 미니 프로젝트 🧩
@@ -42,9 +35,9 @@ fetch는 앞서 말했듯이 비동기 함수이기 때문에 이 요청이 완�
 ```jsx
 componentDidMount(
   fetch(api주소)
-    .then((response) => response.json()) //자바스크립트화 된 데이터
-    .then((response) => this.setState({ data: response }))
-);
+    .then(response => response.json()) //자바스크립트화 된 데이터
+    .then(response => this.setState({ data: response }))
+)
 ```
 
 <br>
@@ -236,7 +229,7 @@ comments = [
 ```jsx
 this.setState({
   comments: arr,
-});
+})
 ```
 
 <br>
@@ -247,27 +240,27 @@ this.setState({
 
 ```jsx
 //댓글창에 입력 시 state 변경
-handleValue = (event) => {
+handleValue = event => {
   this.setState({
     text: event.target.value,
     isActive: true,
-  });
-};
+  })
+}
 
 handleOnClick = () => {
-  const comments = this.state.comments;
-  const new_arr = comments.concat(this.state.text);
-  const token = localStorage.getItem("access_token");
+  const comments = this.state.comments
+  const new_arr = comments.concat(this.state.text)
+  const token = localStorage.getItem('access_token')
 
   this.setState({
     comments: new_arr,
-    text: "",
-  });
+    text: '',
+  })
 
-  fetch("http://10.58.0.163:8000/feed/comment", {
-    method: "POST",
+  fetch('http://10.58.0.163:8000/feed/comment', {
+    method: 'POST',
     headers: {
-      "content-type": "aplicaiton/json",
+      'content-type': 'aplicaiton/json',
       Authorization: token,
     },
     body: JSON.stringify({
@@ -275,9 +268,9 @@ handleOnClick = () => {
       feed_id: 1,
     }),
   })
-    .then((response) => response.json())
-    .then((response) => this.setState({ comments: response }));
-};
+    .then(response => response.json())
+    .then(response => this.setState({ comments: response }))
+}
 ```
 
 <br>

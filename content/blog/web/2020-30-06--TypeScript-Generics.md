@@ -1,13 +1,8 @@
 ---
 title: '[TypeScript] Generics 이해하기 '
-date: '2020-06-30T05:00:03.284Z'
-template: 'post'
+date: 2020-06-30 05:00:03
 draft: true
-slug: 'typescript/200630/4'
 category: 'typescript'
-tags:
-  - 'typescript'
-description: '타입스크립트를 배우면서 처음 접하는 Generics에 대해 이해해보는 시간을 가집니다.'
 ---
 
 ## Generics

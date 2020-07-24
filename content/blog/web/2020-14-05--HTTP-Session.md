@@ -1,13 +1,8 @@
 ---
 title: '[http] HTTP 핵심요소와 구조, HTTP 메서드'
-date: '2020-05-14T01:12:03.284Z'
-template: 'post'
+date: 2020-05-14 01:12:03
 draft: false
-slug: 'http/200514'
 category: 'web'
-tags:
-  - 'http'
-description: 'HTTP는 기본적으로 요청(request)과 응답(response) 구조로 이루어져 있다.'
 ---
 
 # 1. HTTP 핵심요소와 구조

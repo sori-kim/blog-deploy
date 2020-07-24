@@ -1,13 +1,8 @@
 ---
-title: "[TypeScript] 타입스크립트 시작하기 & Basis"
-date: "2020-06-30T02:00:03.284Z"
-template: "post"
+title: '[TypeScript] 타입스크립트 시작하기 & Basis'
+date: 2020-06-30 02:00:03
 draft: false
-slug: "typescript/200630"
-category: "typescript"
-tags:
-  - "typescript"
-description: "타입스크립트와 친해지길 바라 프로젝트... Let's get started 🤘🏻"
+category: 'typescript'
 ---
 
 # 1. Intro & 시작하기
@@ -63,12 +58,12 @@ $ yarn add typescript # 또는 npm install --save typescript
 변수를 선언할때 처음 정의된 데이터타입이 아닌 다른 타입의 값은 들어올 수 없게 된다.
 
 ```jsx
-let character = "mario";
-let age = 30;
-let isBlackBelt = false;
+let character = 'mario'
+let age = 30
+let isBlackBelt = false
 
-character = "rosie";
-age = 40;
+character = 'rosie'
+age = 40
 ```
 
 <br>
@@ -79,19 +74,19 @@ age = 40;
 만약 정의된 타입 이외의 타입값이 들어오면 타입스크립트에서 자바스크립트로 컴파일 자체가 되지 않는다.
 
 ```jsx
-let character: string;
-let age: number;
-let isLoggedIn: boolean;
+let character: string
+let age: number
+let isLoggedIn: boolean
 
-age = 30;
-isLoggedIn = true;
+age = 30
+isLoggedIn = true
 
 const circ = (diameter: number) => {
-  return diameter * Math.PI;
-};
+  return diameter * Math.PI
+}
 
-console.log(circ("hello")); //에러!
-console.log(circ(7.5)); //23.561944901923447
+console.log(circ('hello')) //에러!
+console.log(circ(7.5)) //23.561944901923447
 ```
 
 <br>
@@ -103,24 +98,24 @@ console.log(circ(7.5)); //23.561944901923447
 #### Array
 
 ```jsx
-let names = ["hyo", "daniel", "clark"];
-names.push("jerry");
+let names = ['hyo', 'daniel', 'clark']
+names.push('jerry')
 
-console.log(names);
+console.log(names)
 //["hyo", "daniel", "clark", "jerry"]
-names.push(3); //에러
+names.push(3) //에러
 ```
 
 만약 배열의 요소에 한번이라도 정의된 타입의 경우, 해당 타입의 다른 값을 추가 할 수 있지만
 그렇지 않은 경우 해당 타입의 새로운 값을 추가할 수 없다. (undefined, null 제외)
 
 ```jsx
-let mixed = ["ken", "ruka", 10, "rosie", 23];
+let mixed = ['ken', 'ruka', 10, 'rosie', 23]
 
-mixed.push("daniel");
-mixed.push(undefined);
-mixed.push(null);
-mixed.push(true); //에러
+mixed.push('daniel')
+mixed.push(undefined)
+mixed.push(null)
+mixed.push(true) //에러
 ```
 
 <br>
@@ -131,19 +126,19 @@ mixed.push(true); //에러
 
 ```jsx
 let rimu = {
-  name: "rosie",
+  name: 'rosie',
   age: 5,
   isHuman: true,
-};
+}
 
-rimu.age = 40;
-rimu.name = "sori";
-rimu.favorite = "eat"; //에러. favorite 프로퍼티는 처음보는애다! isHuman은 어디갔냐?
+rimu.age = 40
+rimu.name = 'sori'
+rimu.favorite = 'eat' //에러. favorite 프로퍼티는 처음보는애다! isHuman은 어디갔냐?
 
 rimu = {
-  name: "sori",
+  name: 'sori',
   age: 100,
-};
+}
 //에러. isHuman 프로퍼티가 없다!
 ```
 
@@ -156,29 +151,29 @@ rimu = {
 #### array
 
 ```jsx
-let ninjas: string[] = [];
+let ninjas: string[] = []
 //최초의 빈배열을 선언하고, 타입을 string으로 한정했다.
 
-let mixed: (string | number | boolean)[] = [];
-mixed.push("hello");
-mixed.push(2);
-mixed.push(false);
+let mixed: (string | number | boolean)[] = []
+mixed.push('hello')
+mixed.push(2)
+mixed.push(false)
 //타입이 string 또는 Number 또는 boolean으로 한정되었다.
 ```
 
 #### object
 
 ```jsx
-let ninjaOne: object;
-ninjaOne = { name: "yoshi", age: 30 };
+let ninjaOne: object
+ninjaOne = { name: 'yoshi', age: 30 }
 
 let ninjaTwo: {
   name: string,
   age: number,
   beltColor: string,
-};
+}
 
-ninjaTwo = { name: "rosie", age: 55, beltColor: "black" };
+ninjaTwo = { name: 'rosie', age: 55, beltColor: 'black' }
 ```
 
 ### any
@@ -186,17 +181,17 @@ ninjaTwo = { name: "rosie", age: 55, beltColor: "black" };
 any는 어떤 타입을 사용해야할지 확실히 모를때 사용한다.
 
 ```jsx
-let mixed: any[] = [];
-mixed.push(5);
-mixed.push("mario");
-mixed.push(false);
-console.log(mixed);
+let mixed: any[] = []
+mixed.push(5)
+mixed.push('mario')
+mixed.push(false)
+console.log(mixed)
 //[5, 'mario', false];
 ```
 
 ```jsx
-let ninja: { name: any, age: any };
-ninja = { name: "yoshi", age: 25 };
+let ninja: { name: any, age: any }
+ninja = { name: 'yoshi', age: 25 }
 ```
 
 하지만 any를 남발해서 사용할 경우 타입스크립트의 본질을 흐트러트릴 수 있기 때문에 주의해서 사용해야한다.

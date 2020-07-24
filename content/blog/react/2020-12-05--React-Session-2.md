@@ -1,14 +1,9 @@
 ---
 title: '[React Basis] Session #2  React router'
-date: '2020-05-16T02:12:03.284Z'
+date: 2020-05-16 02:12:03
 template: 'post'
 draft: false
-slug: 'react/200512/1'
 category: 'react'
-tags:
-  - 'react'
-
-description: 'react에서 라우팅을 하는 두가지 방법 Link 컴포넌트와 withReact HOC에 대해 정리한다.'
 ---
 
 ## 1. React Router

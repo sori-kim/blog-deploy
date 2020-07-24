@@ -1,13 +1,8 @@
 ---
-title: "[Git] Github에서 fork한 저장소 최신으로 유지하기"
-date: "2020-06-29T01:00:03.284Z"
-template: "post"
+title: '[Git] Github에서 fork한 저장소 최신으로 유지하기'
+date: 2020-06-29 01:00:03
 draft: false
-slug: "git/200629"
-category: "git"
-tags:
-  - "git"
-description: "오픈소스에 기여하기 위해 친해져야하는 git upstream fetch 하는 법에 대한 기록입니다. "
+category: 'git'
 ---
 
 ## 오픈소스 기여의 시작은 github fork 부터

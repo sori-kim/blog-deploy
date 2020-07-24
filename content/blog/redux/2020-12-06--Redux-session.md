@@ -1,13 +1,8 @@
 ---
 title: 'Redux 세션 내용 정리 '
-date: '2020-06-12T01:00:03.284Z'
-template: 'post'
+date: 2020-06-12 01:00:03
 draft: false
-slug: 'redux/200612'
 category: 'redux'
-tags:
-  - 'redux'
-description: 'Redux에 대한 소개 세션과 블로그 자료를 보고 공부한 내용을 정리했습니다. '
 ---
 
 # Introduction to Redux

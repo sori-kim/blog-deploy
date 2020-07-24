@@ -1,12 +1,8 @@
 ---
 title: '[project] Dooboolab 기업협업 인턴 회고'
-date: '2020-07-22T01:00:03.284Z'
-template: 'post'
-draft: true
-slug: 'review/2000722'
+date: 2020-07-22 01:00:03
+draft: false
 category: '회고'
-tags:
-  - 'team-project'
 ---
 
 ## 4주간의 인턴생활을 회고하며
@@ -16,11 +12,11 @@ tags:
 RN 개발자라면 반드시 dooboolab과 React Native Seoul을 한번은 거쳐간다는 이야기가 들릴 정도로 활발한 활동을 전개하고 있는 곳에  
 짧은 시간 동안이나마 배울 수 있는 경험을 할 수 있다는 게 감사했다. 하지만 이런 두근거림은 인턴 첫 날 dooboolab의 대표 Hyo와 했던 kick-off 시간에 엄청난 좌절감으로 돌아왔다는 후문을 전한다...😷
 
-## 사회의 쓴맛은 맵다
+## 사회의 쓴맛은 강렬하다
 
 이 좌절감은 내가 지난 두달 간 부트캠프에서 배웠던 건 거의 사막의 모래알 만큼의 미미한 수준의 지식이었다는 충격에서 왔다.  
 Dooboolab은 React Native의 개발 업계를 이끌고 있는 것 뿐만 아니라, GraphQL과 Relay, typeScript, Jest, circleCI, storybook 등 온갖 핫한 언어와 툴을 활용하여 탄탄한 구조의 개발을 하고 있었다. 심지어 React Native 개발자들을 위한 보일러플레이트 `dooboo-cli`와 React Native ui component인 `dooboo-ui` 오픈소스로 개발하여 공유하고 하고 있다는 것에 정말 놀랐다.  
-그래서 사실 인턴을 시작하고 2주간은 계속 어안이 벙벙한 상태 + 어떻게 해야할지 감이 안잡히는 상태가 지속되었다....
+그래서 사실 인턴을 시작하고 며칠 간은 계속 어안이 벙벙한 상태 + 어떻게 해야할지 감이 안잡히는 상태가 지속되었다.
 물론 너무 많은 새로운 언어와 기술에 대한 정보가 한번에 쏟아져서 당혹감과 좌절감을 맛봤지만, 많은걸 배우고 개발자로서의 시야를 넓힐 수 있는 기회로 삼기로 마음 먹었다.
 
 ## 그래서 내가 세운 목표는...
@@ -49,4 +45,39 @@ dooboo ui의 코드 자체가 TypeScirpt를 기반으로 이루어져 있어서 
 간단한 컴포넌트의 재사용 조차 시도해보려다가 포기했었다. 그런데 이번 프로젝트의 핵심이 바로 `재사용 가능한 컴포넌트 개발`이었고 나 뿐만 아니라 누구나 그걸 가지고 원하는대로 커스터마이징 할 수 있게 틀을 잡아줘야했다. 개발을 시작하고 생전 처음해보는 작업이어서 초반에 어떻게 구조를 잡아야할지 감을 전혀 잡지 못해서 오랜시간 구글링을 하며 방황했다...
 그러다가 나를 살려준 것은 다름 아닌 `react children` 개념이었다.
 
-### React children
+### React children prop : 컴포넌트에서 다른 컴포넌트를 담기
+
+React 공식문서에는 children prop을 `합성 vs 상속` 카테고리에서 설명하고 있다. 공식문서에서 이 부분이 특히 중요한 것 같으니 여러번 읽으면서 숙지해둬야겠다. [참고](https://ko.reactjs.org/docs/composition-vs-inheritance.html)
+
+어떤 컴포넌트들은 어떤 자식 엘리먼트가 들어올 지 미리 예상할 수 없는 경우가 있다. 주로 ‘박스’ 역할을 하는 Sidebar 혹은 Dialog와 같은 컴포넌트에서 특히 자주 볼 수 있는데, 이러한 컴포넌트에서는 children prop을 사용하여 자식 엘리먼트를 출력에 그대로 전달하는 것이 좋다. 참고로, React API에는 이 props와 함께 사용할 수 있는 React.Children.map, React.Children.forEach, React.Children.count, React.Children.only, React.Children.toArray등 여러가지 방법이 있다.
+
+children prop의 간단한 사용법은 아래와 같다.
+
+```jsx
+//부모 컴포넌트
+function WelcomeDialog() {
+  return (
+    <FancyBorder color="blue">
+      <h1 className="Dialog-title">Welcome</h1>
+      <p className="Dialog-message">Thank you for visiting our spacecraft!</p>
+    </FancyBorder>
+  )
+}
+```
+
+```jsx
+//자식 컴포넌트
+function FancyBorder(props) {
+  return (
+    <div className={'FancyBorder FancyBorder-' + props.color}>
+      {props.children}
+    </div>
+  )
+}
+```
+
+<FancyBorder> JSX 태그 안에 있는 것들이 FancyBorder 컴포넌트의 children prop으로 전달된다. FancyBorder는 {props.children}을 <div> 안에 렌더링하므로 전달된 엘리먼트들이 최종 출력되는걸 알 수 있다.
+
+<br>
+
+## dooboo-ui Modal Component의 구조

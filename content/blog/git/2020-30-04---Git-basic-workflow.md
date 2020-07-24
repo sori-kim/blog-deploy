@@ -1,21 +1,9 @@
 ---
-title: "[Git] Git 작업흐름과 기본명령어"
-date: "2020-04-30T00:12:03.284Z"
-template: "post"
+title: '[Git] Git 작업흐름과 기본명령어'
+date: 2020-04-30 00:12:03
 draft: false
-slug: "git/200430/1"
-category: "git"
-tags:
-  - "git"
-
-description: " Git은 어떤 프로젝트를 진행할때 ‘시간 여행이 가능한 평행 우주를 만드는것’과 같다. 메인작업을 진행하면서 실험적인 작업을 해보고 싶을때, 깃이 없다면 폴더를 통째로 복사해서 각각에서 진행을 해야겠지만 깃에서는 폴더 안에서 여러 평행우주를 생성해서 그 우주들 안에서 각각 다른 버전으로 프로젝트를 관리할 수 있다."
-socialImage: "/media/42-line-bible.jpg"
+category: 'git'
 ---
-
-<!-- - [The first transition](#the-first-transition)
-- [The digital age](#the-digital-age)
-- [Loss of humanity through transitions](#loss-of-humanity-through-transitions)
-- [Chasing perfection](#chasing-perfection) -->
 
 # 1. Git을 사용해야 하는 이유
 

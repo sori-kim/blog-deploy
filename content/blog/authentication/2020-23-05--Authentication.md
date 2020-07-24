@@ -1,13 +1,8 @@
 ---
-title: "[보완예정] 인증(Authentication) / 인가(Authorization) "
-date: "2020-05-25T04:12:03.284Z"
-template: "post"
+title: '인증(Authentication) / 인가(Authorization)'
+date: 2020-05-25 04:12:03
 draft: false
-slug: "authentication/200518"
-category: "authentication"
-tags:
-  - "authentication"
-description: ""
+category: 'authentication'
 ---
 
 # 인증(Authentication)

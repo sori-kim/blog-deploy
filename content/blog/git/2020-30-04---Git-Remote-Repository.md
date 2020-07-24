@@ -1,17 +1,8 @@
 ---
-title: "[Git] Git Remote 저장소와 Local 저장소 연결하여 관리하기  "
-date: "2020-04-30T04:12:03.284Z"
-template: "post"
+title: '[Git] Git Remote 저장소와 Local 저장소 연결하여 관리하기'
+date: 2020-04-30 04:12:00
 draft: false
-slug: "git/200430/2"
-category: "git"
-tags:
-  - "git"
-  # - "Typography"
-  # - "Web Development"
-description: "앞서 살펴봤던 Git의 저장소(repository)는 두가지 종류가 있는데, `Remote repository`와 `Local repository`가 바로 그것이다.  
-Git은 개인적으로 코드의 변경사항을 추적하고 프로젝트를 관리하기 위해 사용할 뿐만 아니라 다른 사람들과 협업하여 개발할때 역시 아주 중요한 역할을 담당하고 그 부분을 위해 등장하는게 바로 remote repository(원격저장소)이다."
-socialImage: "/media/42-line-bible.jpg"
+category: 'git'
 ---
 
 # Remote 저장소와 Local 저장소
