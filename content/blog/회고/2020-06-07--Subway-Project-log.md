@@ -1,7 +1,7 @@
 ---
 title: '[project] wecode 1차 프로젝트 Subway 🥪 후기'
 date: 2020-06-07 01:00:03
-draft: false
+draft: true
 category: '회고'
 ---
 
