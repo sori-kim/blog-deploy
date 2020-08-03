@@ -1,6 +1,6 @@
 ---
 title: '[회고] Wecode 2차 프로젝트 Patagonia 웹사이트 개발 회고'
-date: 2020-07-23 12:21:13
+date: 2020-08-2 12:21:13
 category: '회고'
 draft: false
 ---
