@@ -351,9 +351,9 @@ render(){
 프로젝트 최종 발표 전 날 새벽 5시까지 마지막 스탠드업 미팅을 하고 어떻게든 발표를 위해 마무리를 하기 위해 팀원들과 지새웠던 그 새벽이 꽤 오랫동안 기억이 날 것 같다.
 이렇게 추억만 많이 만들었던 서브웨이 프로젝트 회고를 마친다. 🥪
 
-<img src="https://user-images.githubusercontent.com/60246689/88529945-a64e0400-d03b-11ea-97fc-5fa893b01546.PNG" width="400" height="900" />
-<img src="https://user-images.githubusercontent.com/60246689/88529948-a817c780-d03b-11ea-8379-fcccd1279b52.PNG" width="400" height="900" />
-<img src="https://user-images.githubusercontent.com/60246689/88529951-a948f480-d03b-11ea-84f0-c36835b70fab.PNG" width="400" height="900" />
+<img src="https://user-images.githubusercontent.com/60246689/88529945-a64e0400-d03b-11ea-97fc-5fa893b01546.PNG" />
+<img src="https://user-images.githubusercontent.com/60246689/88529948-a817c780-d03b-11ea-8379-fcccd1279b52.PNG"  />
+<img src="https://user-images.githubusercontent.com/60246689/88529951-a948f480-d03b-11ea-84f0-c36835b70fab.PNG"  />
 
 <br />
 <br />
